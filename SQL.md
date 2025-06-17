@@ -236,3 +236,11 @@ ORDER BY cost DESC;
 ## SQL practice
 Retrieve a customer with the most rentals in 2017 year
 ![[Pasted image 20250615115437.png]]
+## Create, Alter, and Drop Statements
+![[Pasted image 20250617112806.png]]
+![[Pasted image 20250617123345.png]]
+![[Pasted image 20250617123539.png]]
+
+![[Pasted image 20250617123432.png]]
+In PostgreSQL, `bigserial` is a shorthand for creating an auto-incrementing column that uses the `BIGINT` data type. It automatically generates a unique, sequential integer for each new row added to the table. Essentially, `bigserial` combines a `BIGINT` column with an automatic sequence generator.
+![[Pasted image 20250617124539.png]]
