@@ -1,0 +1,248 @@
+{
+  "main": {
+    "id": "e709f5742e4196de",
+    "type": "split",
+    "children": [
+      {
+        "id": "6435e3b17c9fe603",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a6573d0865b9000",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "GIT EPAM.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "GIT EPAM"
+            }
+          },
+          {
+            "id": "94eb572d682360fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NOTES/SQL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQL"
+            }
+          },
+          {
+            "id": "7216cb5d72c6bf21",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "NOTES/SQL Part 2.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "SQL Part 2"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8e399a005c143d97",
+    "type": "split",
+    "children": [
+      {
+        "id": "bf7e04ce4988534a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ddc7eccb5adda477",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": true
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "5983b9a78edee4c0",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "aad027390fef5e94",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ffa686f5d8ab2e79",
+    "type": "split",
+    "children": [
+      {
+        "id": "22e6342ac9d4056c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "70f789efda01e76a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "GIT EPAM.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for GIT EPAM"
+            }
+          },
+          {
+            "id": "057ed03a6b051690",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "GIT EPAM.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from GIT EPAM"
+            }
+          },
+          {
+            "id": "95df5ea801617f9e",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "08c2615efc511234",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "GIT EPAM.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of GIT EPAM"
+            }
+          },
+          {
+            "id": "727af377c735c7f2",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "7216cb5d72c6bf21",
+  "lastOpenFiles": [
+    "Pasted image 20250624114148.png",
+    "Pasted image 20250624113940.png",
+    "Pasted image 20250624113847.png",
+    "Pasted image 20250624113509.png",
+    "Pasted image 20250624112803.png",
+    "Pasted image 20250624112624.png",
+    "Pasted image 20250624112545.png",
+    "Pasted image 20250624112029.png",
+    "Pasted image 20250624111941.png",
+    "Pasted image 20250624110229.png",
+    "Pasted image 20250624105752.png",
+    "NOTES/SQL.md",
+    "NOTES/SQL Part 2.md",
+    "NOTES/GIT EPAM.md",
+    "NOTES/Python data types.md",
+    "NOTES/README.md",
+    "NOTES",
+    "NOTES_epam/GIT EPAM.md",
+    "NOTES_epam/README.md",
+    "NOTES_epam",
+    "FOR TEST/GIT EPAM 1.md",
+    "FOR TEST",
+    "GIT EPAM",
+    "Untitled.md",
+    "Untitled 2",
+    "Software Development Methodologies.md",
+    "Untitled 1",
+    "GIT",
+    "Python.canvas",
+    "Python data types.md",
+    "Welcome.md",
+    "Software Development Methodologies/Welcome.md",
+    "create a link.md"
+  ]
+}

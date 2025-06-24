@@ -37,3 +37,65 @@ In the normalized approach, data in a DWH is stored—to a certain degree—acco
 ![](https://elearn.epam.com/assets/courseware/v1/bb3ffda3d35741ddf5665c6b408ba596/asset-v1:RD_CIS+DE+ENG+type@asset+block/Databases_Topic8_007_3x.png)
 ![[Pasted image 20250623151107.png]]
 ![[Pasted image 20250623151201.png]]
+## Window Fuctions
+![[Pasted image 20250624152405.png]]
+In the context of SQL, a **window function** is a powerful analytical tool that operates on a set of rows within a specified window or group. It allows calculations or aggregations to be performed over a specific subset of data and defined by a window frame while retaining the individual row-level details. Window functions make it possible to perform advanced analysis tasks such as ranking, calculating running totals, finding percentiles, identifying gaps or peaks, and much more.
+![[Pasted image 20250624152511.png]]
+The ROW_NUMBER function assigns a unique sequential number to each row in the result set. The numbers start from 1 and increment by 1 for each subsequent row. There are no gaps or ties in the sequence.
+The RANK function assigns a unique rank to each row in the result set based on the values in a specific column. If two or more rows have the same values, they receive the same rank, and the **subsequent rank is skipped**. The ranks are not consecutive, and gaps may exist.
+Similar to the RANK function, the DENSE_RANK function assigns a unique rank to each row in the result set. However, **it does not skip ranks for ties**. If two or more rows have the same values, they receive the same rank, and the subsequent rank continues without gaps.
+![[Pasted image 20250624152554.png]]
+![[Pasted image 20250624152607.png]]
+##  Window Frames
+
+![[Pasted image 20250624153433.png]]
+
+ROWS frames are defined based on the number of rows within the window. They specify a fixed number of preceding or following rows relative to the current row. For example, you can define a ROWS frame as "3 PRECEDING" to include the three rows before the current row. ROWS frames are particularly useful when you want to include a fixed number of rows for calculations or comparisons.
+RANGE frames are defined based on the values of the column(s) in the ORDER BY clause. They include rows whose values fall within a specified range relative to the value of the current row.  
+The range can be defined using logical offsets such as "UNBOUNDED PRECEDING" or "CURRENT ROW. "For example, you can define a RANGE frame as "BETWEEN 10 PRECEDING AND 5 FOLLOWING" to include rows within a range of 10 rows before the current row and five rows after it based on the ORDER BY column. RANGE frames are commonly used when you want to perform calculations based on the values of column(s) rather than a fixed number of rows.
+
+The **offset value** specifies the number of lines or groups to include before or after the current line, depending on the frame mode. In rows mode, the offset determines the fixed size of the frame, while in groups mode, it shifts the frame based on the related rows.
+![[Pasted image 20250624154824.png]]
+![[Pasted image 20250624154937.png]]
+![[Pasted image 20250624155929.png]]
+
+### 1. **ROWS mode**
+
+Operates on the physical number of rows.
+
+`SUM(salary) OVER (ORDER BY department ROWS BETWEEN 1 PRECEDING AND 1 FOLLOWING)`
+
+➡️ Includes exactly one row before and one row after the current row based on ordering.
+
+---
+
+### 2. **RANGE mode**
+
+Operates on **value-based logical ranges**, **not row counts**. All rows with equal `ORDER BY` values are included.
+
+`SUM(salary) OVER (ORDER BY department RANGE BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)`
+
+➡️ Includes all rows with the same department value and all greater values (according to the `ORDER BY`).
+
+- In `RANGE`, **ties (equal values)** are treated as a group.
+    
+- Cannot be used with multiple `ORDER BY` columns unless all are numeric or date types and support numeric distance.
+    
+
+---
+
+### 3. **GROUPS mode** (PostgreSQL 11+, SQL:2011+)
+
+Works like `RANGE`, but on **logical peer groups** (rows with same `ORDER BY` values), but instead of specifying value ranges, you specify group counts.
+`SUM(salary) OVER (ORDER BY department GROUPS BETWEEN 1 PRECEDING AND 1 FOLLOWING)`
+
+➡️ Includes the group before and after the current group of `department`.
+![[Pasted image 20250624161423.png]]
+![[Pasted image 20250624161823.png]]
+![[Pasted image 20250624161950.png]]
+![[Pasted image 20250624162032.png]]
+![[Pasted image 20250624162118.png]]
+![[Pasted image 20250624162904.png]]
+![[Pasted image 20250624163300.png]]
+![[Pasted image 20250624163350.png]]
+NOTE: Last value faction returns only first value if window frame is not specified
